@@ -26,8 +26,8 @@ const second = 1000,
   hour = minute * 60,
   day = hour * 24;
 
-// let countDown = new Date(`${config.birthdate} 00:00:00`).getTime();
-let countDown = new Date("Nov 20, 2024 18:49:00").getTime();
+let countDown = new Date(`${config.birthdate} 00:00:00`).getTime();
+// let countDown = new Date("Nov 20, 2024 18:49:00").getTime();
 x = setInterval(function() {
   let now = new Date().getTime(),
     distance = countDown - now;
@@ -42,39 +42,6 @@ x = setInterval(function() {
   document.getElementById('second').innerText = Math.floor(
     (distance % minute) / second
   );
-
-
-// let countDown = new Date().getTime() + 55 * 1000; // Countdown for next 15 seconds
-// x = setInterval(function() {
-//   let now = new Date().getTime(),
-//     distance = countDown - now;
-
-//   // Ensure countdown doesn't go negative
-//   if (distance <= 0) {
-//     clearInterval(x);
-//     document.getElementById('day').innerText = 0;
-//     document.getElementById('hour').innerText = 0;
-//     document.getElementById('minute').innerText = 0;
-//     document.getElementById('second').innerText = 0;
-
-//     // Trigger desired actions after 15 seconds
-//     head.style.display = 'none';
-//     count.style.display = 'none';
-//     giftbox.style.display = 'initial';
-//     showfireworks();
-//   } else {
-//     document.getElementById('day').innerText = Math.floor(distance / day);
-//     document.getElementById('hour').innerText = Math.floor(
-//       (distance % day) / hour
-//     );
-//     document.getElementById('minute').innerText = Math.floor(
-//       (distance % hour) / minute
-//     );
-//     document.getElementById('second').innerText = Math.floor(
-//       (distance % minute) / second
-//     );
-//   }
-// }, second);
 
 
   let w = (c.width = window.innerWidth),
