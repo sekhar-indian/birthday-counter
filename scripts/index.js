@@ -26,7 +26,8 @@ const second = 1000,
   hour = minute * 60,
   day = hour * 24;
 
-let countDown = new Date(`${config.birthdate} 00:00:40`);
+// let countDown = new Date(`${config.birthdate} 00:00:00`).getTime();
+let countDown = new Date("Nov 20, 2024 18:49:00").getTime();
 x = setInterval(function() {
   let now = new Date().getTime(),
     distance = countDown - now;
