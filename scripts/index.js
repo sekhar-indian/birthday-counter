@@ -43,7 +43,7 @@ const second = 1000,
 //   );
 
 
-let countDown = new Date().getTime() + 15 * 1000; // Countdown for next 15 seconds
+let countDown = new Date().getTime() + 55 * 1000; // Countdown for next 15 seconds
 x = setInterval(function() {
   let now = new Date().getTime(),
     distance = countDown - now;
